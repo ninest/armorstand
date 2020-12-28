@@ -1,7 +1,6 @@
 from datetime import datetime
 from enum import Enum
-
-from doctest import testmod
+from typing import List
 
 
 class DateCode(Enum):
@@ -18,14 +17,16 @@ class DateCode(Enum):
     SLASH = "/"
 
 
-def get_date(order, return_strf=False):
-    """
-    >>> get_date([DateCode.DAY, DateCode.MONTH, DateCode.COMMA, DateCode.YEAR], return_strf=True)
-    '%-d %B, %Y'
+def get_date(order: List[DateCode], return_strf=False) -> str:
+    """Get the date using codes from DateCode, or a strftime builder
 
-    >>> get_date([DateCode.MONTH_NUMBER, DateCode.SLASH, DateCode.DAY, DateCode.SLASH, DateCode.SHORT_YEAR], return_strf=True)
-    '%-m/%-d/%y'
+    Parameters:
+        order (List[DateCode]): the date format
+        return_strf (bool, default False): use to return the datetime `strftime` format.
+
+    Use return_strf for testing.
     """
+
     now = datetime.now()
 
     string = ""
@@ -42,8 +43,5 @@ def get_date(order, return_strf=False):
 
     if return_strf:
         return string.strip()
+
     return now.strftime(string).strip()
-
-
-if __name__ == "__main__":
-    testmod(name="get_date", verbose=True)

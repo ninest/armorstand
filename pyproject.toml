@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "armorstand"
-version = "20.12.28"
-description = ""
+version = "20.12.28.11.35"
+description = "All my utility functions"
 authors = ["ninest"]
 
 [tool.poetry.dependencies]
