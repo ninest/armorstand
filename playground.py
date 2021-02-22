@@ -1,16 +1,3 @@
-from armorstand.date import DateCode
-from armorstand.date import get_date
+from armorstand.youtube.download import download_video
 
-d = get_date(
-    [
-        DateCode.DAY_NAME,
-        DateCode.COMMA,
-        DateCode.DAY,
-        DateCode.MONTH,
-        DateCode.COMMA,
-        DateCode.YEAR,
-    ],
-    # return_strf=True,
-)
-
-print(d)
+download_video("dQw4w9WgXcQ")

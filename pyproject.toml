@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "armorstand"
-version = "20.12.28.11.35"
+version = "21.02.22.20.27"
 description = "All my utility functions"
 authors = ["ninest"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/ninest/armorstand/"
+documentation = "https://github.com/ninest/armorstand/"
 
 [tool.poetry.dependencies]
 python = "^3.7"
+youtube_dl = "^2021.2.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

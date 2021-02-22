@@ -344,6 +344,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "youtube-dl"
+version = "2021.2.10"
+description = "YouTube video downloader"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "zipp"
 version = "3.4.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
@@ -358,7 +366,7 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "35b05741c417ad73347fccb1c14cea07bc593e5c3186dc2530a64bdd2c1e1a67"
+content-hash = "d0dae67185094d9879ce624541a6181b6baa673ffbb32aeaf678df342bff6a4a"
 
 [metadata.files]
 appdirs = [
@@ -556,6 +564,10 @@ virtualenv = [
 wcwidth = [
     {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
     {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
+]
+youtube-dl = [
+    {file = "youtube_dl-2021.2.10-py2.py3-none-any.whl", hash = "sha256:e7d48cd42f3081e1e0064e69f31f2856508ef31c0fc80eeebd8e70c6a031a24d"},
+    {file = "youtube_dl-2021.2.10.tar.gz", hash = "sha256:b390cddbd4d605bd887d0d4063988cef0fa13f916d2e1e3564badbb22504d754"},
 ]
 zipp = [
     {file = "zipp-3.4.0-py3-none-any.whl", hash = "sha256:102c24ef8f171fd729d46599845e95c7ab894a4cf45f5de11a44cc7444fb1108"},
